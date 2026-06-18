@@ -1,5 +1,12 @@
 export type ProjectStatus = "Live" | "Prototype" | "Under Development" | "Archived";
 
+export type ProjectType =
+  | "Academic Project"
+  | "Independent Project"
+  | "Research Project"
+  | "Professional Prototype"
+  | "Live Application";
+
 export type ProjectCategory =
   | "Applied AI"
   | "Banking Analytics"
@@ -30,7 +37,10 @@ export interface Project {
   solution: string;
   categories: ProjectCategory[];
   technologies: string[];
-  status: ProjectStatus;
+  year?: string;
+  projectType?: ProjectType;
+  role?: string;
+  status?: ProjectStatus;
   featured: boolean;
   githubUrl?: string;
   liveUrl?: string;
@@ -47,6 +57,8 @@ export interface Project {
   results?: string[];
   limitations?: string[];
   futureImprovements?: string[];
+  targetUsers?: string;
+  lessonsLearned?: string[];
 }
 
 export interface Experience { role: string; organization: string; period: string; summary: string; highlights: string[] }

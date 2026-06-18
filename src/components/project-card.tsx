@@ -9,7 +9,7 @@ export function ProjectCard({ project, priority = false }: { project: Project; p
     <div className="flex flex-1 flex-col p-5 sm:p-6">
       <div className="flex flex-wrap items-center gap-2"><span className="chip">{project.status}</span><span className="chip">{project.categories[0]}</span></div>
       <h2 className="mt-4 text-xl font-black tracking-[-.025em]">{project.title}</h2>
-      <p className="mt-3 leading-7 muted">{project.summary}</p>
+      <p className="mt-3 line-clamp-4 leading-7 muted">{project.summary}</p>
       <div className="mt-5 border-t border-[var(--line)] pt-4">
         <h3 className="text-sm font-bold">Problem addressed</h3>
         <p className="mt-1 line-clamp-3 text-sm leading-6 muted">{project.problem}</p>

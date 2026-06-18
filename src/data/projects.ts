@@ -1,5 +1,8 @@
 import type { Project } from "./types";
 
+// Verified public dates and contributor-role labels are not available for these records.
+// Keep `year` and `role` omitted until they can be confirmed from a primary source.
+
 export const projects: Project[] = [
   {
     id: "smart-complaint-structuring-system",
@@ -12,6 +15,8 @@ export const projects: Project[] = [
     categories: ["Natural Language Processing", "Customer Experience", "Banking Operations", "Applied AI", "Data Application"],
     technologies: ["Python", "Streamlit", "Pandas", "OpenPyXL", "Regex"],
     status: "Live",
+    projectType: "Live Application",
+    targetUsers: "Complaint operations and service teams preparing records for review and reporting.",
     featured: true,
     githubUrl: "https://github.com/Tanailee/smart-complaint-structuring-system",
     liveUrl: "https://smart-complaint-structuring-system-hwyaphibqbzk7df7zaqflm.streamlit.app/",
@@ -40,6 +45,8 @@ export const projects: Project[] = [
     categories: ["Natural Language Processing", "Applied AI", "Financial Safety", "Khmer NLP", "Data Application"],
     technologies: ["Python", "Streamlit", "Scikit-learn", "TF-IDF", "OCR", "Sentence Transformers (optional)"],
     status: "Live",
+    projectType: "Live Application",
+    targetUsers: "Khmer- and English-speaking users who need help reviewing potentially suspicious messages.",
     featured: true,
     githubUrl: "https://github.com/Tanailee/khmer-english-scam-safety-assistant",
     liveUrl: "https://khmer-english-scam-safety-assistant-4ctbgtk28jkfhfw4hkcijn.streamlit.app/",
@@ -68,6 +75,8 @@ export const projects: Project[] = [
     categories: ["Banking Analytics", "Recommendation System", "Financial Analysis", "Data Application"],
     technologies: ["Python", "Streamlit", "Pandas", "SQLite", "TF-IDF", "BM25", "Scikit-learn"],
     status: "Live",
+    projectType: "Live Application",
+    targetUsers: "Analysts and product teams researching Cambodian fixed-deposit offerings.",
     featured: true,
     githubUrl: "https://github.com/Tanailee/fixed-deposit-ir-project",
     liveUrl: "https://fixed-deposit-ir-project-ir.streamlit.app/",
@@ -96,6 +105,8 @@ export const projects: Project[] = [
     categories: ["Time Series", "Forecasting", "Machine Learning", "Data Application", "Data Visualization"],
     technologies: ["Python", "Streamlit", "Pandas", "Plotly", "Statsmodels", "Scikit-learn", "XGBoost"],
     status: "Live",
+    projectType: "Live Application",
+    targetUsers: "Analysts and students reviewing retail forecasting methods and exported model evidence.",
     featured: true,
     githubUrl: "https://github.com/Tanailee/retail-sales-forecasting-streamlit",
     liveUrl: "https://retail-sales-forecasting-app-sale.streamlit.app/",
@@ -124,6 +135,8 @@ export const projects: Project[] = [
     categories: ["Business Intelligence", "Banking Analytics", "Dashboard", "Data Visualization", "Data Application"],
     technologies: ["Python", "Streamlit", "JavaScript", "HTML", "CSS", "OpenPyXL"],
     status: "Live",
+    projectType: "Live Application",
+    targetUsers: "Call-center and complaint teams exploring operational records and service trends.",
     featured: false,
     githubUrl: "https://github.com/Tanailee/call-center-dashboard-streamlit",
     liveUrl: "https://call-center-dashboard-app-cmimo5s5yuxhc8sqx6nvhf.streamlit.app/",
@@ -152,6 +165,8 @@ export const projects: Project[] = [
     categories: ["Natural Language Processing", "Khmer NLP", "Text Generation", "Language Modelling", "Data Application"],
     technologies: ["Python", "Streamlit", "Jupyter", "N-Gram Language Models"],
     status: "Live",
+    projectType: "Live Application",
+    targetUsers: "Students exploring transparent Khmer language-model concepts and probability outputs.",
     featured: false,
     githubUrl: "https://github.com/Tanailee/khmer-ngram-text-generator",
     liveUrl: "https://khmer-ngram-text-generator-nlp.streamlit.app/",
@@ -180,6 +195,8 @@ export const projects: Project[] = [
     categories: ["Natural Language Processing", "Khmer NLP", "Machine Learning", "Data Visualization", "Data Application"],
     technologies: ["Python", "Streamlit", "PyTorch", "KhmerNLP", "Scikit-learn", "Plotly", "PCA", "K-Means"],
     status: "Live",
+    projectType: "Live Application",
+    targetUsers: "Students and researchers exploring Khmer tokenization, embeddings, clustering, and next-word models.",
     featured: false,
     githubUrl: "https://github.com/Tanailee/NLP-Mini-Project-3-Khmer-Embeddings",
     liveUrl: "https://nlp-mini-project-3-khmer-embeddings-wordembedding.streamlit.app/",
