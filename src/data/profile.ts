@@ -1,6 +1,6 @@
 export const profile = {
   name: "Sithan Sitana", professionalName: "Mr. Sithan Sitana", location: "Phnom Penh, Cambodia",
-  headline: "Data Science Master’s Student and Banking Analytics Professional",
+  headline: "Data Science Master’s Student and Banking Professional",
   email: "sithansitana007@gmail.com", github: "https://github.com/Tanailee", linkedin: "https://www.linkedin.com/in/sithan-sitana-873330188",
   contactIntroduction: "I am open to research collaboration, data science projects, academic discussion, and knowledge exchange, particularly in applied AI, banking analytics, and Khmer-language technology.",
   summary: "Master’s student in Data Science at the Institute of Technology of Cambodia and a banking professional with around six years of industry experience. I build data analytics, machine-learning, business-intelligence, and Streamlit applications focused on banking, customer experience, financial products, and decision support.",
