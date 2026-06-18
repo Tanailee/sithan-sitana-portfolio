@@ -20,6 +20,6 @@ export function ProjectFilter() {
       {filters.map(filter => <button key={filter} type="button" onClick={() => setActive(filter)} aria-pressed={active === filter} className={`btn !w-auto shrink-0 text-sm ${active === filter ? "btn-primary" : ""}`}>{filter}</button>)}
     </div>
     <p className="mt-4 text-sm muted" role="status" aria-live="polite">Showing {shown.length} {shown.length === 1 ? "project" : "projects"}</p>
-    {shown.length ? <div className="mt-7 grid items-stretch gap-6 md:grid-cols-2">{shown.map(project => <ProjectCard key={project.id} project={project}/>)}</div> : <div className="card mt-7 p-8 text-center"><h2 className="font-black">No projects match this filter</h2><p className="mt-2 muted">Choose another topic to view the available case studies.</p></div>}
+    {shown.length ? <div className="mt-6 grid items-stretch gap-4 sm:mt-7 sm:gap-6 md:grid-cols-2">{shown.map(project => <ProjectCard key={project.id} project={project}/>)}</div> : <div className="card mt-7 p-8 text-center"><h2 className="font-black">No projects match this filter</h2><p className="mt-2 muted">Choose another topic to view the available case studies.</p></div>}
   </>;
 }

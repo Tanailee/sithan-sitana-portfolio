@@ -64,8 +64,22 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
 @media (max-width: 640px) {
   .container { width: min(100% - 1.25rem, 1120px); }
+  .section { padding-block: 2.75rem; }
   .display { letter-spacing: -.05em; }
   .btn { width: 100%; }
+  .chip { gap: .3rem; padding: .32rem .58rem; font-size: .7rem; }
+  .mobile-hero-actions .btn { min-height: 52px; padding-block: .55rem; }
+  .mobile-home-hero { padding-top: 1.75rem; padding-bottom: 1.5rem; }
+  .compact-tags .chip:nth-child(n + 5) { display: none; }
+}
+
+@media (max-width: 330px) {
+  .mobile-metrics { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .section { padding-block: 3.25rem; }
+  .mobile-home-hero { padding-top: 3rem; padding-bottom: 2rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

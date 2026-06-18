@@ -2,9 +2,9 @@ import Image from "next/image";
 import { ImageIcon } from "lucide-react";
 import type { Project } from "@/data/types";
 
-export function ProjectThumbnail({ project, priority = false, sizes = "(max-width: 768px) 100vw, 50vw", className = "" }: { project: Project; priority?: boolean; sizes?: string; className?: string }) {
-  return <figure className={`flex aspect-video min-w-0 flex-col overflow-hidden rounded-xl border border-[var(--line)] bg-[var(--surface)] shadow-sm ${className}`}>
-    <div className="flex h-7 shrink-0 items-center gap-2 border-b border-[var(--line)] bg-[var(--surface-soft)] px-3" aria-hidden="true">
+export function ProjectThumbnail({ project, priority = false, sizes = "(max-width: 768px) 100vw, 50vw", className = "", compactOnMobile = false }: { project: Project; priority?: boolean; sizes?: string; className?: string; compactOnMobile?: boolean }) {
+  return <figure className={`flex min-w-0 flex-col overflow-hidden rounded-xl border border-[var(--line)] bg-[var(--surface)] shadow-sm ${compactOnMobile ? "aspect-[16/8.5] sm:aspect-video" : "aspect-video"} ${className}`}>
+    <div className="flex h-6 shrink-0 items-center gap-1.5 border-b border-[var(--line)] bg-[var(--surface-soft)] px-2.5 sm:h-7 sm:gap-2 sm:px-3" aria-hidden="true">
       <span className="h-2 w-2 rounded-full bg-[#ef6a63]"/><span className="h-2 w-2 rounded-full bg-[#e6b84f]"/><span className="h-2 w-2 rounded-full bg-[#55b878]"/>
       <span className="ml-1 min-w-0 truncate text-[10px] font-semibold tracking-wide text-[var(--muted)]">{project.shortTitle}</span>
     </div>
