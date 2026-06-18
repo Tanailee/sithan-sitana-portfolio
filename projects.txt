@@ -1,0 +1,7 @@
+- call-center-dashboard
+- fixed-deposit-analysis-and-recommendation
+- khmer-english-scam-safety-assistant
+- khmer-text-generator
+- nlp-khmer-embeddings
+- retail-sales-forecasting
+- smart-complaint-structuring-system

@@ -1,0 +1,3 @@
+import { PageHero } from "@/components/page-hero";import { ProjectFilter } from "@/components/project-filter";
+export const metadata={title:"Projects",description:"Project case studies across banking analytics, machine learning, Khmer NLP, time series, business intelligence, and data applications.",alternates:{canonical:"/projects"}};
+export default function ProjectsPage(){return <><PageHero eyebrow="Project library" title="Analysis built to answer a question." description="Filter work across machine learning, banking analytics, NLP, time series, business intelligence, and deployable data applications."/><section className="section"><div className="container"><ProjectFilter/></div></section></>}

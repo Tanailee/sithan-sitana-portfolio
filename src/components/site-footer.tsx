@@ -1,0 +1,2 @@
+import Link from "next/link";import { profile } from "@/data/profile";
+export function SiteFooter(){return <footer className="border-t border-[var(--line)] py-10"><div className="container flex flex-col justify-between gap-4 text-sm text-[var(--muted)] md:flex-row"><p>© {new Date().getFullYear()} {profile.name}. Built for clarity, credibility, and careful work.</p><div className="flex gap-5"><Link href="/contact">Contact</Link><Link href="/cv">CV</Link><Link href="/projects">Projects</Link></div></div></footer>}

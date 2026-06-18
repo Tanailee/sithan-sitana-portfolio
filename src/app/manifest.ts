@@ -1,0 +1,2 @@
+import type { MetadataRoute } from "next";
+export default function manifest(): MetadataRoute.Manifest { return { name: "Sithan Sitana · Data Science & Banking Analytics", short_name: "Sithan Sitana", description: "Professional and academic portfolio in banking analytics, data science, and applied AI.", start_url: "/", display: "standalone", background_color: "#f5f7f5", theme_color: "#086553", icons: [{ src: "/favicon.svg", sizes: "any", type: "image/svg+xml" }] }; }
